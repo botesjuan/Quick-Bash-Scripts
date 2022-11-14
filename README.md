@@ -1,4 +1,4 @@
-# List Bash Short Scripts
+# List Short Bash Scripts
 Sample of Bash scripts
 
 The below bash oneliner script reads each line of text file and ping echo, and return the line with success PING and show IP address.  
